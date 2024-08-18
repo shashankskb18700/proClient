@@ -63,7 +63,8 @@ Ensure you have the following installed:
 To start the backend server:
 
 ````bash
-npm start```
+npm start
+```
 
 
 ## Frontend
