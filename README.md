@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# MERN Stack Application with Authentication and Product Management
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a MERN stack application designed to handle user authentication and product management. It includes functionalities for user registration, login, logout, and basic product management. The application is built using MongoDB, Express.js, React, and Node.js (MERN). Authentication is implemented using JSON Web Tokens (JWT), and tokens are securely stored in HttpOnly cookies.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+### Authentication System
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Registration**: Users can register with their email and password.
+- **Login**: Registered users can log in with their credentials.
+- **Logout**: Users can log out, which invalidates their session.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Product Management
 
-### `npm test`
+- **Fetch Products**: The application fetches and displays a list of products from the DummyJSON Product API on the home page.
+- **Create Product**: Users can create a new product (currently, only a success message is shown).
+- **Delete Product**: Users can delete an existing product from the list.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Extras (Not Implemented)
 
-### `npm run build`
+- **Sorting & Filtering**: Sorting and filtering of fetched products.
+- **Forgot Password**: Functionality to reset a forgotten password.
+- **State Management**: Using Redux to manage user state and display the logged-in user’s details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JSON Web Tokens (JWT)
+- **Styling**: (Optional) Tailwind CSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ensure you have the following installed:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [MongoDB](https://www.mongodb.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Steps
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the Repository**
 
-## Learn More
+   ```bash
+   git clone https://github.com/shashankskb18700/proServer.git
+   cd proServer
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **npm install**
+3. **Environment Variables**
+   Create a .env file in the root directory and add the following variables:
+   MONGODB_URI=mongodb://127.0.0.1:27017/guestara
+   JWT_SECRET=your_jwt_secret
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Running the Application
 
-### Code Splitting
+## Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start the backend server:
 
-### Analyzing the Bundle Size
+```bash
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The frontend is hosted separately. You can view the live application at:
+[https://crown-db-50da8.web.app/](https://crown-db-50da8.web.app/)
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The application is deployed on Firebase. You can access it here:
+[https://crown-db-50da8.web.app/](https://crown-db-50da8.web.app/)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Documentation
 
-### `npm run build` fails to minify
+For detailed information on the API endpoints and functionalities, refer to the inline comments in the codebase.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+```
