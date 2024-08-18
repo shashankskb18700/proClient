@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.authentication {
+  /* background-color: var(--background); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1em;
+  min-height: 100vh;
+  /* padding-bottom: 2em; */
+
+  /* font-family: "Roboto"; */
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed fixed;
+  background-position: left 0em bottom 17vh, left 20vw bottom 15.7vh,
+    right 40vw bottom 16.6vh, right 20vw bottom 19vh, right 1em bottom 16.7vh;
+  background-size: 12em, 9em, 8em, 12em, 13em;
+
+  color: var(--text);
+}
+
+.authentication button {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: 0.3em;
+  border-radius: 0.25em;
+}
+
+.authForm form {
+  padding-bottom: 2em;
+  /* height: 20em; */
+  z-index: 4;
+}
+.authForm {
+  display: flex;
+  /* width: 35vw; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: var(--secondary-background); */
+  /* background-image: url(../../assets/svg/logoIcon.svg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: 20em; */
+  color: var(--primary-text);
+  /* box-shadow: var(--primary-border) 0px 0px 10px; */
+
+  padding-bottom: 1em;
+
+  /* border-radius: 0.25em; */
+  z-index: 3;
+  padding-right: 1vw;
+}
+.authForm label {
+  font-weight: bold;
+}
+
+.authSection {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input:focus {
+  /* outline: none; */
+  border: 2px solid var(--accent);
+  transition: 0.8s;
+}
+
+input {
+  /* border: 2px solid var(--background); */
+  border-radius: 0.25em;
+  padding: 1em 0;
+  padding-left: 0.3em;
+  color: var(--text);
+  font-family: "Roboto";
+  /* background-color: var(--background); */
+}
+
+.callToAction {
+  /* width: 23em; */
+  background-color: var(--primary);
+  /* padding-right: 1vw; */
+  text-align: center;
+  font-family: "Roboto";
+}
+.callToAction button {
+  border: none;
+  background-color: var(--primary-button);
+  color: var(--button-text);
+  width: 20.5rem;
+}
+
+.callToAction > * {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.backgroundGraphics {
+  width: 100vw;
+  height: 100vh;
+  /* margin-bottom: 30vh; */
+  position: fixed;
+  bottom: 0em;
+  z-index: 1;
+  /* background-color: var(--primary); */
+  /* background-image: url("../../assets/svg/fileSharing.svg"),
+    url("../../assets/svg/addFile.svg"); */
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed fixed;
+  background-position: left 0em bottom, right bottom;
+  background-size: 25em, 22em;
+}
+.info {
+  /* background-color: var(--header-background); */
+  /* text-align:; */
+  font-family: "fira sans";
+  font-weight: 600;
+  font-size: 2em;
+  width: 100vw;
+  padding: 0.3em;
+  /* height: 9vw; */
+  /* padding-left: 35vw; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info div:nth-child(2) {
+  font-weight: 500;
+  font-size: 0.4em;
+  font-family: "Roboto";
+  border: 2px solid var(--primary-text);
+  padding: 1vh 1.5vw;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.info div:nth-child(2):hover {
+  background-color: var(--header-background);
+  border: 2px solid var(--primary-text);
+  color: var(--light-text);
+  transition: 0.5s;
+}
+
+.productivityGraphics {
+  transform: scale(2);
+}
+.authFooter {
+  width: 100vw;
+  height: 20vh;
+  background-color: var(--header-background);
+  color: var(--secondary-background);
+}
+
+.logo {
+  /* scale: 0.7; */
+  width: 30vw;
+  height: 6vw;
+  fill: var(--light-text);
+  fill: white;
+  /* margin-top: 1em; */
+}
+.slogan {
+  scale: 1;
+  margin-top: 1em;
+}
+
+.or {
+  text-align: center;
+  /* border-bottom: 1px solid #000; */
+  line-height: 0.1em;
+  font-family: "roboto";
+  display: flex;
+  flex-direction: column;
+}
+
+.or span {
+  width: 0.1em;
+  height: 20vh;
+  margin: 2em;
+}
+.or1 {
+  width: 0.1em;
+  background: linear-gradient(white, black);
+}
+.or2 {
+  width: 0.1em;
+  background: linear-gradient(black, white);
+}
+
+@media (max-width: 600px) {
+  .backgroundGraphics {
+    display: none;
+    background-color: var(--background);
+  }
+  .authentication {
+    width: 100vw;
+
+    background-color: white;
+    background-image: none;
+  }
+
+  .authSection {
+    flex-direction: column;
+  }
+  .authForm {
+    background-color: white;
+    /* background-image: url(../../assets/svg/opy.svg); */
+    /* background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top; */
+    /* background-size: 20em; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; */
+    margin-top: 2em;
+    padding-bottom: 1em;
+
+    border-radius: 0.25em;
+    z-index: 3;
+  }
+  .callToAction {
+    /* width: inherit; */
+  }
+
+  .or {
+    flex-direction: row;
+    align-items: center;
+  }
+  .or span {
+    width: 35vw;
+    height: 0.1em;
+    margin: 1em;
+  }
+  .or1 {
+    width: 0.1em;
+    background: linear-gradient(0.25turn, white, black);
+  }
+  .or2 {
+    width: 0.1em;
+    background: linear-gradient(0.25turn, black, white);
+  }
+}

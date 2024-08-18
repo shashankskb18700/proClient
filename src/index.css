@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Background colors */
+  --background: #fafaff; /* Very Light Gray/Off-White for main background */
+  --secondary-background: #e4d9ff; /* Light Lavender for secondary background */
+  --header-background: #1e2749; /* Dark Blue for header background */
+  --footer-background: #273469; /* Deep Blue for footer background */
+  --sidebar-background: #30343f; /* Dark Gray for sidebar background */
+
+  /* Text colors */
+  --primary-text: #1e2749; /* Dark Blue for primary text */
+  --secondary-text: #273469; /* Deep Blue for secondary text */
+  --highlight-text: #e4d9ff; /* Light Lavender for highlight text */
+  --light-text: #ffffff; /* White for light text */
+
+  /* Border colors */
+  --primary-border: #e4d9ff; /* Light Lavender for primary border */
+  --secondary-border: #fafaff; /* Very Light Gray for secondary border */
+
+  /* Button colors */
+  --primary-button: #1e2749; /* Dark Blue for primary button */
+  --secondary-button: #30343f; /* Dark Gray for secondary button */
+  --button-text: #ffffff; /* White for button text */
+}

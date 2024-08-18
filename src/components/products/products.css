@@ -1,0 +1,36 @@
+.products {
+  /* width: fit-content; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto";
+
+  margin: 1rem;
+}
+.products img {
+  width: 15rem;
+}
+
+.imgAndRating {
+  position: relative;
+  background-color: var(--header-background);
+  color: var(--light-text);
+  border-radius: 0.175rem;
+}
+
+.imgAndRating p {
+  position: absolute;
+}
+.imgAndRating > p:nth-child(3) {
+  right: 1rem;
+  bottom: 1rem;
+  background-color: var(--light-text);
+  color: var(--header-background);
+  border-radius: 0.175rem;
+  padding: 0.1rem;
+}
+.imgAndRating > p:nth-child(2) {
+  left: 0.5rem;
+  bottom: 1rem;
+}
