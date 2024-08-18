@@ -62,10 +62,7 @@ Ensure you have the following installed:
 
 To start the backend server:
 
-````bash
 npm start
-```
-
 
 ## Frontend
 
@@ -77,7 +74,6 @@ The frontend is hosted separately. You can view the live application at:
 The application is deployed on Firebase. You can access it here:
 [https://crown-db-50da8.web.app/](https://crown-db-50da8.web.app/)
 
-
 ### Documentation
 
 For detailed information on the API endpoints and functionalities, refer to the inline comments in the codebase.
@@ -85,4 +81,7 @@ For detailed information on the API endpoints and functionalities, refer to the 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-````
+
+```
+
+```
