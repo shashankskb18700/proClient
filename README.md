@@ -62,8 +62,8 @@ Ensure you have the following installed:
 
 To start the backend server:
 
-```bash
-npm start
+````bash
+npm start```
 
 
 ## Frontend
@@ -84,4 +84,4 @@ For detailed information on the API endpoints and functionalities, refer to the 
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-```
+````
